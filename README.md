@@ -1,2 +1,10 @@
 # pants-pyoxidizer-example
-Support documentation 
+
+Support documentation for ...
+
+## Compilation Instructions
+
+```bash
+./pants --version
+./pants package ::
+```

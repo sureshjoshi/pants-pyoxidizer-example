@@ -1,0 +1,21 @@
+[GLOBAL]
+pants_version = "2.11.0.dev0"
+pantsd = true 
+
+backend_packages = [
+    "pants.backend.python",
+    "pants.backend.experimental.python.packaging.pyoxidizer",
+]
+
+[source]
+marker_filenames = ["BUILD"]
+
+[python]
+interpreter_constraints = [">=3.8"]
+
+[pyoxidizer]
+interpreter_constraints = [">=3.8"]
+args = ["--release"]
+
+[anonymous-telemetry]
+enabled = false
